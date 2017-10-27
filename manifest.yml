@@ -1,0 +1,4 @@
+name: ng4-demo
+instances: 1
+memory: 512M
+command: npm start
