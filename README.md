@@ -2,6 +2,19 @@
 # ng4-express
 to test drive deploying a simple angular 4 app to IBM Cloud (Bluemix) and also a IBM Cloud Private. With the same codebase deploy as PaaS (Cloud Foundry) and CaaS (Docker) both for off and on prem cloud.
 
+The demo demonstrate the same codebase
+- consistent of choice for deploying app to private or public for our users.
+- cater to different deployment for cost, security, capacity, performance, scales
+- high availability of app for different platform of choice
+- used of open technologies
+
+## TODO
+- [x] angular get-started app push to IBM Cloud **Private** - Cloud Foundry
+- [x] angular get-started app push to IBM Cloud **Bluemix** - Cloud Foundry
+- [ ] angular get-started app push to IBM Cloud **Private**  - Kubernetes
+- [ ] angular get-started app push to IBM Cloud **Bluemix** - Kubernetes
+- [ ] load balancer in IBM Cloud **Private** to app in private and public Cloud
+
 # About the demo
 a [quick start](https://angular.io/guide/quickstart) demo hosted using express.
 
@@ -17,7 +30,7 @@ cf api https://api.mgmt.cf.sgcc.demo.lan --skip-ssl-validation
 ```
 ## login using UAA
 ```
-cf login -u *<userid>* -p *<password>*
+cf login -u <userid> -p <password>
 ```
 ## push the app
 the app uses node engines 6, my default environment does not have node 6 buildpack
