@@ -49,7 +49,7 @@ cf scale ng4-demo -i 2
 ```
 ## delete the running apps
 ```
-cf delete ng4-demo 
+cf delete ng4-demo
 ```
 
 
@@ -58,7 +58,7 @@ Let deploy the same app to IBM Cloud
 
 ## set the cloud foundry endpoint
 ```
-cf api https://api.ng.bluemix.net 
+cf api https://api.ng.bluemix.net
 ```
 ## login using UAA
 ```
@@ -67,7 +67,7 @@ cf login
 ## push the app
 IBM Cloud supports node 6 engine, thus no need reference to node 6 buildpack
 ```
-cf push 
+cf push
 ```
 ## list the running apps
 ```
@@ -82,5 +82,3 @@ use the urls shown in the apps listing above
 ```
 https://ng4-demo.mybluemix.net
 ```
-
-
