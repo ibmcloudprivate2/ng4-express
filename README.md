@@ -81,13 +81,5 @@ use the urls shown in the apps listing above
 ```
 https://ng4-demo.mybluemix.net
 ```
-## scale the running apps
-from above we can see there is only 1 instance running, we can scale it easily to 2 instance.
-```
-cf scale ng4-demo -i 2
-```
-## delete the running apps
-```
-cf delete ng4-demo 
-```
+
 
