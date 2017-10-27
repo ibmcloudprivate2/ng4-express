@@ -8,12 +8,23 @@ The demo demonstrate the same codebase
 - high availability of app for different platform of choice
 - used of open technologies
 
+# pre requisite
+- cloud foundry CLI
+- Bluemix account
+- IBM Cloud Private environment
+- Git
+- angular
+- express
+- Docker
+
 ## TODO
 - [x] angular get-started app push to IBM Cloud **Private** - Cloud Foundry
 - [x] angular get-started app push to IBM Cloud **Bluemix** - Cloud Foundry
 - [ ] angular get-started app push to IBM Cloud **Private**  - Kubernetes
 - [ ] angular get-started app push to IBM Cloud **Bluemix** - Kubernetes
+- [ ] create CI / CD pipeline using Git and Jenkins
 - [ ] load balancer in IBM Cloud **Private** to app in private and public Cloud
+- [ ] package a Ubuntu environment with Vagrant and Virtualbox
 
 # About the demo
 a [quick start](https://angular.io/guide/quickstart) demo hosted using express.
@@ -95,3 +106,28 @@ use the urls shown in the apps listing above
 ```
 https://ng4-demo.mybluemix.net
 ```
+# Containerization of the application
+To package the application as a docker image for deployment in Kubernetes.
+
+## Build the docker image
+```
+docker build -t ng4-express .
+```
+## Run the Docker Container
+```
+docker run -p 3000:3000 ng4-express
+```
+## Access the application
+```
+http://localhost:3000
+```
+
+# IBM Cloud Private - Kubernetes
+*TODO*
+- [ ] Push image to IBM Cloud Private
+- [ ] Deploy docker application
+- [ ] Access application
+- [ ] Scale application
+
+# References
+- [Cloud Foundry CLI](http://docs.cloudfoundry.org/cf-cli/)
